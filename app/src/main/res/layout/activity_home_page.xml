@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/homedashboard"
+    tools:context=".HomePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/homelogo"
+                android:layout_width="119dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/homeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Welcome To E-Comanada"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="57dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="790dp"
+            android:background="@drawable/dashboard"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/banner">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="145dp"
+                    android:layout_height="142dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.428"
+                    app:srcCompat="@drawable/mobile" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="232dp"
+                    android:layout_height="171dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_white"
+                    tools:layout_editor_absoluteX="157dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="353dp"
+                android:layout_height="59dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:drawablePadding="16dp"
+                android:hint="Search for..."
+                android:inputType="text"
+                android:textColorHint="@color/Goldenrod" />
+
+            <TextView
+                android:id="@+id/categorylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="20dp"
+                android:text="Categories"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/categorysamsung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="20dp"
+                android:text="Samsung"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone1"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:clickable="true"
+                            android:onClick="SamsungGalaxy23"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Galaxy 23"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone2"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:clickable="true"
+                            android:onClick="SamsungGalaxy22"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Galaxy 22"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="121dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone3"
+                            android:layout_width="120dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Galaxy 21"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/categoryiphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="20dp"
+                android:text="I-Phone"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone4"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IPhone14"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone5"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IPhone13"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="121dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone6"
+                            android:layout_width="120dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IPhone12"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/categorypixel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="20dp"
+                android:text="Google Pixel"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone7"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pixel7"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <TextView
+                            android:id="@+id/textphone8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pixel6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+
+                        <ImageView
+                            android:id="@+id/imgphone8"
+                            android:layout_width="110dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp"  />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="121dp"
+                    android:layout_height="149dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp">
+
+                        <ImageView
+                            android:id="@+id/imgphone9"
+                            android:layout_width="120dp"
+                            android:layout_height="132dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/galaxys23"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="4dp" />
+
+                        <TextView
+                            android:id="@+id/textphone9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pixel6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="100dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
