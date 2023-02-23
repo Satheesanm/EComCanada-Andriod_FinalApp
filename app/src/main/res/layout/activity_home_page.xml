@@ -38,7 +38,8 @@
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="57dp" />
+                tools:layout_editor_absoluteX="57dp"
+                tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -74,7 +75,23 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/circle_white"
-                    tools:layout_editor_absoluteX="157dp" />
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="158dp"
+                    android:layout_height="129dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="cursive"
+                    android:text="Mega Valentine offer till MArch End"
+                    android:textColor="@color/darkgrays"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <EditText
@@ -141,7 +158,8 @@
                             android:paddingRight="20dp"
                             app:srcCompat="@drawable/galaxys23"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textphone1"
@@ -151,7 +169,8 @@
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -172,9 +191,10 @@
                             android:onClick="SamsungGalaxy22"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
-                            app:srcCompat="@drawable/galaxys23"
+                            app:srcCompat="@drawable/galaxys22"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textphone2"
@@ -184,7 +204,8 @@
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -203,20 +224,22 @@
                             android:layout_height="132dp"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
-                            android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="SamsungGalaxy21"
+                            app:srcCompat="@drawable/galaxys21"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
-                            android:id="@+id/textphone4"
+                            android:id="@+id/textphone3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Galaxy 21"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -256,9 +279,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Phone14"
+                            app:srcCompat="@drawable/i14"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textphone4"
@@ -267,7 +292,8 @@
                             android:text="IPhone14"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -287,9 +313,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Phone13"
+                            app:srcCompat="@drawable/i13"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textphone5"
@@ -298,7 +326,8 @@
                             android:text="IPhone13"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
@@ -319,9 +348,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Phone12"
+                            app:srcCompat="@drawable/i12"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints"/>
 
                         <TextView
                             android:id="@+id/textphone6"
@@ -330,7 +361,8 @@
                             android:text="IPhone12"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -370,9 +402,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Pixel7"
+                            app:srcCompat="@drawable/pixel7"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints"/>
 
                         <TextView
                             android:id="@+id/textphone7"
@@ -381,7 +415,8 @@
                             android:text="Pixel7"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp"/>
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -401,7 +436,8 @@
                             android:text="Pixel6"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
 
                         <ImageView
                             android:id="@+id/imgphone8"
@@ -410,9 +446,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Pixel6"
+                            app:srcCompat="@drawable/pixel6"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp"  />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -432,9 +470,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:clickable="true"
-                            app:srcCompat="@drawable/galaxys23"
+                            android:onClick="Pixel5"
+                            app:srcCompat="@drawable/pixel5"
                             tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="4dp" />
+                            tools:layout_editor_absoluteY="4dp"
+                            tools:ignore="MissingConstraints"/>
 
                         <TextView
                             android:id="@+id/textphone9"
@@ -443,7 +483,8 @@
                             android:text="Pixel6"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="100dp" />
+                            tools:layout_editor_absoluteY="100dp"
+                            tools:ignore="MissingConstraints"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 

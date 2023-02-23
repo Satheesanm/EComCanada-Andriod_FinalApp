@@ -27,7 +27,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="170dp"
         app:cardCornerRadius="10dp"
         android:layout_marginTop="120dp"
         app:cardElevation="0dp"
@@ -85,12 +85,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <LinearLayout
-                        android:id="@+id/minusLayout"
+                        android:id="@+id/decrement"
                         android:orientation="horizontal"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:background="@drawable/circle_bg"
-                        android:elevation="5dp">
+                        android:elevation="5dp"
+                        android:onClick="decrement">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -103,10 +104,10 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/quantityTvCart"
+                        android:id="@+id/text_view"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
-                        android:text="14"
+                        android:text="0"
                         android:gravity="center"
                         android:textColor="@color/mainText"
                         android:textSize="18sp"
@@ -122,12 +123,13 @@
                         android:elevation="5dp">
 
                         <ImageView
-                            android:id="@+id/plusLayout"
+                            android:id="@+id/increment"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_baseline_add_24"
                             android:padding="8dp"
                             app:tint="@color/mainText"
+                            android:onClick="increment"
                             />
 
                     </LinearLayout>
@@ -140,14 +142,6 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/cartMore"
-                    android:src="@drawable/ic_baseline_clear_24"
-                    app:tint="@color/mainText"
-                    />
 
             </LinearLayout>
 
@@ -159,7 +153,7 @@
     <LinearLayout
         android:id="@+id/pricedetails"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="170dp"
         android:layout_marginTop="324dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -168,23 +162,77 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price  :"
-            android:textColor="@color/white"></TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="180dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tax  :"
-            android:textColor="@color/white"></TextView>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total :"
-            android:textColor="@color/white"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price  : "
+                    android:textSize="25dp"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/pricevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  "
+                    android:textSize="25dp"
+                    android:textColor="@color/white"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax (%)  : "
+                    android:textSize="25dp"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/taxvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="25dp"
+                    android:textColor="@color/white"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total : "
+                    android:textSize="25dp"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/tatalvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text=""
+                    android:textColor="@color/white"></TextView>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
     </LinearLayout>
 
     <Button

@@ -1,20 +1,58 @@
 package com.online.e_comcanada
 
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import java.text.NumberFormat
 
 class AddToCard {
+    @SuppressLint("SuspiciousIndentation")
     fun setAddToCartClickListener(addToCartView: View) {
         addToCartView.setOnClickListener {
             val intent = Intent(addToCartView.context, MyCart::class.java)
-            addToCartView.context.startActivity(intent)
+                   addToCartView.context.startActivity(intent)
+        }
+    }
+}
+
+class CartUtils {
+
+    fun setAddToCartClickListener(addToCartView: View,name: String, price: String) {
+  //  fun cart(context: Context, name: String, price: String) {
+        val intent = Intent(addToCartView.context, MyCart::class.java)
+        val extras = Bundle()
+        extras.putString("name", name)
+        extras.putString("price", price)
+        intent.putExtras(extras)
+        addToCartView. context.startActivity(intent)
+    }
+}
+
+
+class putExtra {
+    fun setAddToCartClickListener(addToCartView: View) {
+        val intent = Intent( addToCartView. context, MyCart::class.java     ) // Replace "context" with a valid context object
+
+        intent.putExtra("name", R.id.item_detail_price)
+
+
+        addToCartView. context.startActivity(intent)
+        }
+    }
+
+
+
+
+class Buy {
+    fun setBuyClickListener(buy: View) {
+        buy.setOnClickListener {
+            val intent = Intent(buy.context, DeliveryAddress::class.java)
+            buy.context.startActivity(intent)
         }
     }
 }
@@ -40,4 +78,6 @@ class Similar {
         }
     }
 }
+
+
 

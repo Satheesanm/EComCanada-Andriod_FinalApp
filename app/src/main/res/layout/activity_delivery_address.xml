@@ -1,9 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkgrays"
     tools:context=".DeliveryAddress">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/top_background"
+        android:clickable="true"
+        tools:layout_editor_absoluteY="-6dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Delivery Address"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/delivername"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/buttongb2"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Goldenrod"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/deliveryAddress"
+        android:layout_width="353dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/buttongb2"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Goldenrod"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/deliveryPhone"
+        android:layout_width="353dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/buttongb2"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Goldenrod"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/lDeliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="333dp"
+        android:paddingTop="15dp"
+        android:text="choose_a_deliver_method_option"
+        android:textColor="@color/Goldenrod"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:checkedButton="@id/option_SameDay"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <RadioButton
+            android:id="@+id/option_SameDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="same_day_messenger_service_option"
+            android:textColor="@color/Goldenrod"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/option_NextDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next_day_ground_delivery_option"
+            android:textColor="@color/Goldenrod"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/option_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pickup__option"
+            android:textColor="@color/Goldenrod"
+
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confimredorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@color/Goldenrod"
+        android:text="Confirm Order"
+        android:textColor="@color/black"></Button>
+
+
+</RelativeLayout>

@@ -3,4 +3,17 @@
     <string name="s23name">Samsung Galaxy S23</string>
     <string name="s23description">SAMSUNG Galaxy S23 Cell Phone, Factory Unlocked Android Smartphone, 256GB Storage, 50MP Camera, Night Mode, Long Battery Life, Adaptive Display, US Version, 2023, Green</string>
     <string name="s23price">$1,649.99</string>
+
+    <string name="s22name">Samsung Galaxy S22</string>
+    <string name="s22description">SAMSUNG Galaxy S22 Ultra Cell Phone, Factory Unlocked Android Smartphone, 128GB, 8K Camera , Video, Brightest Display Screen, S Pen, Long Battery Life, Fast 4nm Processor, US Version, Burgundy</string>
+    <string name="s22price">$1,199.99</string>
+
+
+    <string name="s21name">Samsung Galaxy S21</string>
+    <string name="s21description">SAMSUNG Galaxy S21 FE 5G Cell Phone, Factory Unlocked Android Smartphone, 128GB, 120Hz Display Screen, Pro Grade Camera, All Day Intelligent Battery, US Version, Graphite</string>
+    <string name="s21price">$590.67</string>
+
+
+    <string name="button_buy">Buy</string>
+    <string name="confirm_pay"><![CDATA[Confirm & Pay]]></string>
 </resources>

@@ -49,7 +49,7 @@ class Login : AppCompatActivity() {
             } else {
                 val checkuserpass = DB!!.checkusernamepass(username, password)
                 if (checkuserpass == true) {
-                    val i = Intent(this@Login, UserInfo::class.java)
+                    val i = Intent(this@Login, HomePage::class.java)
                     i.putExtra("username", username)
                     Toast.makeText(this@Login, "Login Successful!", Toast.LENGTH_SHORT)
                         .show()
@@ -59,8 +59,6 @@ class Login : AppCompatActivity() {
                 }
             }
         }
-
-
 
         linkNewReq.setOnClickListener {
             startActivity(Intent(this@Login, Signup::class.java))
